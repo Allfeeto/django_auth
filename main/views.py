@@ -64,3 +64,6 @@ def registerPage(request):
             return redirect('login')
     # ренедерим шаблон и передаем объект формы
     return render(request, 'main/registration.html', {'form': form})
+
+def home(request):
+    return render(request, 'main/home.html')
